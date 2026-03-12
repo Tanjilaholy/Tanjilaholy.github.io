@@ -1,0 +1,348 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:#0f0f0f;
+  color:#e4e4e4;
+  line-height:1.6;
+}
+
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 10%;
+  background:#111;
+}
+
+nav a{
+  margin-right:20px;
+  text-decoration:none;
+  color:#cfcfcf;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:white;
+}
+
+.theme-toggle{
+  cursor:pointer;
+  font-size:20px;
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+  padding:100px 20px;
+}
+
+.hero h1{
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+.hero h3{
+  color:#bdbdbd;
+  margin-bottom:15px;
+}
+
+.hero p{
+  color:#9e9e9e;
+  margin-bottom:25px;
+}
+
+/* Hero Name & Title */
+.hero-name {
+  font-size:32px;
+  margin:15px 0 5px;
+  color:#fff;
+  text-align:center;
+  font-weight:700;
+}
+
+.hero-title {
+  font-size:18px;
+  color:#bdbdbd;
+  text-align:center;
+  margin-bottom:20px;
+  line-height:1.4;
+}
+
+/* BUTTON */
+.btn{
+  background:white;
+  color:black;
+  padding:10px 25px;
+  border-radius:5px;
+  text-decoration:none;
+  display:inline-block;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+}
+
+/* Small certificate button */
+.btn-small {
+  background: #ffcc00;
+  color: #111;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: 0.3s;
+}
+
+.btn-small:hover {
+  transform: scale(1.05);
+  background: #e6b800;
+}
+
+/* PROFILE IMAGE */
+.avatar{
+  width:140px;
+  height:140px;
+  margin:auto;
+  border-radius:50%;
+  overflow:hidden;
+  margin-bottom:20px;
+  border:3px solid #2a2a2a;
+}
+
+.avatar img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* MAIN CONTAINER */
+.container{
+  max-width:900px;
+  margin:40px auto;
+  background:#1b1b1b;
+  padding:40px;
+  border-radius:8px;
+}
+
+/* SECTION TITLE */
+h2{
+  margin-bottom:20px;
+  color:white;
+}
+
+/* CARD */
+.card{
+  background:#242424;
+  padding:20px;
+  border-radius:6px;
+  transition:all 0.3s ease;
+  box-shadow:0 4px 12px rgba(0,0,0,0.25);
+  margin-bottom:20px;
+}
+
+/* SKILLS */
+.skills-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:25px;
+  justify-content:center;
+  margin-top:20px;
+}
+
+.skill{
+  width:85px;
+  height:85px;
+  background:#242424;
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+.skill i{
+  font-size:48px;
+}
+
+.skill:hover{
+  transform:scale(1.15);
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* PROJECT */
+.project{
+  background:#242424;
+  padding:18px;
+  border-radius:6px;
+  margin-bottom:15px;
+  transition:all 0.3s ease;
+  box-shadow:0 4px 12px rgba(0,0,0,0.25);
+  cursor:pointer;
+}
+
+/* HOVER EFFECT */
+.card:hover,
+.project:hover,
+.skill:hover{
+  transform:translateY(-6px) scale(1.03);
+  box-shadow:0 14px 35px rgba(0,0,0,0.45);
+}
+
+/* GITHUB ICON */
+.github{
+  font-size:22px;
+  margin-top:10px;
+  color:#d0d0d0;
+  transition:0.3s;
+}
+
+.github:hover{
+  color:white;
+}
+
+/* CONTACT */
+#contact a{
+  color:#d0d0d0;
+  text-decoration:none;
+}
+
+#contact a:hover{
+  color:white;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  background:#111;
+  margin-top:40px;
+  font-size:14px;
+}
+
+/* LIGHT MODE */
+.light-mode{
+  background:#f2f2f2;
+  color:#222;
+}
+
+.light-mode header{
+  background:white;
+}
+
+.light-mode nav a{
+  color:#333;
+}
+
+.light-mode nav a:hover{
+  color:black;
+}
+
+.light-mode .container{
+  background:white;
+  color:#222;
+}
+
+.light-mode .card,
+.light-mode .project,
+.light-mode .skill{
+  background:#f7f7f7;
+  color:#222;
+}
+
+.light-mode footer{
+  background:#eaeaea;
+  color:#222;
+}
+
+.light-mode h2{
+  color:#111;
+}
+
+/* HERO TEXT FIX FOR LIGHT MODE */
+.light-mode .hero-name{
+  color:#000;
+}
+
+.light-mode .hero-title{
+  color:#000;
+}
+
+.light-mode .hero p{
+  color:#333;
+}
+
+.light-mode .hero h3{
+  color:#333;
+}
+
+/* MODAL FOR CERTIFICATE */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  background: #111;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 700px;
+  width: 90%;
+}
+
+.modal-content img {
+  border-radius: 6px;
+  width: 100%;
+  height: auto;
+}
+
+.modal .close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:768px){
+
+  .hero h1{
+    font-size:28px;
+  }
+
+  .container{
+    padding:25px;
+  }
+
+  nav{
+    display:flex;
+    flex-wrap:wrap;
+  }
+
+  nav a{
+    margin:10px;
+  }
+}
